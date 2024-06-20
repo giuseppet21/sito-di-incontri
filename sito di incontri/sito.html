@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito di Incontri</title>
+    <link rel="stylesheet" href="sito.css"> <!-- Collega il file CSS -->
+</head>
+<body>
+    <img src="https://static2.amica.it/wp-content/uploads/2023/07/app-incontri-GettyImages-1288271580-635x397.jpg" alt="">
+    <div class="container">
+        <h1>Benvenuto nel Sito di Incontri</h1>
+        <form id="profile-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Età:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Genere:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Maschio</option>
+                <option value="female">Femmina</option>
+                <option value="other">Altro</option>
+            </select>
+
+            <label for="bio">Biografia:</label>
+            <textarea id="bio" name="bio" required></textarea>
+
+            <button type="submit">Crea Profilo</button>
+        </form>
+        <h2>Profili Utente</h2>
+        <div id="profiles"></div>
+    </div>
+    <script src="script.js"></script> <!-- Collega il file JavaScript -->
+</body>
+</html>
